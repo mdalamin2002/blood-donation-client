@@ -38,7 +38,7 @@ const Header = () => {
               key={item.path}
               to={item.path}
               className={({ isActive }) =>
-                `px-3 py-2 rounded hover:text-red-600 transition ${
+                `px-3 py-2 rounded hover:text-green-300-red-600 transition ${
                   isActive ? "text-red-600 font-semibold" : "text-gray-700"
                 }`
               }
@@ -92,13 +92,13 @@ const Header = () => {
             <>
               <NavLink
                 to="/login"
-                className="px-3 py-2 rounded hover:text-red-600 transition text-gray-700"
+                className="px-3 py-2 rounded hover:text-green-300-red-600 transition text-gray-700"
               >
                 Login
               </NavLink>
               <NavLink
                 to="/registration"
-                className="px-3 py-2 rounded hover:text-red-600 transition text-gray-700"
+                className="px-3 py-2 rounded hover:text-green-300-red-600 transition text-gray-700"
               >
                 Register
               </NavLink>
@@ -137,7 +137,7 @@ const Header = () => {
                 key={item.path}
                 to={item.path}
                 className={({ isActive }) =>
-                  `block px-4 py-2 border-b hover:text-red-600 transition ${
+                  `block px-4 py-2 border-b hover:text-green-300-red-600 transition ${
                     isActive ? "text-red-600 font-semibold" : "text-gray-700"
                   }`
                 }
@@ -150,12 +150,12 @@ const Header = () => {
               <>
                 <NavLink
                   to="/dashboard/profile"
-                  className="block px-4 py-2 hover:text-red-600 transition text-gray-700"
+                  className="block px-4 py-2 hover:text-green-300-red-600 transition text-gray-700"
                 >
                   Profile
                 </NavLink>
                 <button
-                  className="w-full text-left px-4 py-2 hover:text-red-600 transition text-gray-700"
+                  className="w-full text-left px-4 py-2 hover:text-green-300-red-600 transition text-gray-700"
                   onClick={logOut}
                 >
                   Logout
@@ -165,13 +165,13 @@ const Header = () => {
               <>
                 <NavLink
                   to="/login"
-                  className="block px-4 py-2 hover:text-red-600 transition text-gray-700"
+                  className="block px-4 py-2 hover:text-green-300-red-600 transition text-gray-700"
                 >
                   Login
                 </NavLink>
                 <NavLink
                   to="/registration"
-                  className="block px-4 py-2 hover:text-red-600 transition text-gray-700"
+                  className="block px-4 py-2 hover:text-green-300-red-600 transition text-gray-700"
                 >
                   Register
                 </NavLink>

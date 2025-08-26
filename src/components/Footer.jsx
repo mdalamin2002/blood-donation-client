@@ -29,10 +29,10 @@ const Footer = () => {
         <div>
           <h6 className="text-lg font-bold mb-4 uppercase tracking-wide">Quick Links</h6>
           <ul className="space-y-2 text-red-100">
-            <li><Link to="/" className="hover:text-orange-300 transition">Home</Link></li>
-            <li><Link to="/blog" className="hover:text-orange-300 transition">Blog</Link></li>
-            <li><Link to="/AllDonationRequests" className="hover:text-orange-300 transition">DonationRequests</Link></li>
-            <li><Link to="/DonorSearch" className="hover:text-orange-300 transition">DonorSearch</Link></li>
+            <li><Link to="/" className="hover:text-green-300 transition">Home</Link></li>
+            <li><Link to="/blog" className="hover:text-green-300 transition">Blog</Link></li>
+            <li><Link to="/AllDonationRequests" className="hover:text-green-300 transition">DonationRequests</Link></li>
+            <li><Link to="/DonorSearch" className="hover:text-green-300 transition">DonorSearch</Link></li>
             
           </ul>
         </div>
@@ -53,7 +53,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook"
-              className="hover:text-orange-300 transition"
+              className="hover:text-green-300 transition"
             >
               <FaFacebook />
             </a>
@@ -62,7 +62,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="LinkedIn"
-              className="hover:text-orange-300 transition"
+              className="hover:text-green-300 transition"
             >
               <FaLinkedin />
             </a>
@@ -71,7 +71,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub"
-              className="hover:text-orange-300 transition"
+              className="hover:text-green-300 transition"
             >
               <FaGithub />
             </a>
@@ -90,11 +90,11 @@ const Footer = () => {
               name="email"
               required
               placeholder="Your email"
-              className="w-full px-4 py-2 rounded-md text-red-900 placeholder-red-500 focus:outline-none focus:ring-2 focus:ring-orange-400"
+              className="w-full px-4 py-2 rounded-md focus:outline-none focus:ring-2"
             />
             <button
               type="submit"
-              className="w-full px-4 py-2 rounded-md bg-orange-500 hover:bg-orange-600 transition font-semibold shadow-md"
+              className="w-full px-4 py-2 rounded-md bg-green-600 hover:bg-orange-600 transition font-semibold shadow-md"
             >
               Subscribe
             </button>
@@ -103,7 +103,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom bar */}
-      <div className="bg-red-950/60 py-4 text-center text-sm text-red-300">
+      <div className="bg-red-950/60 py-4 text-center text-sm ">
         © {year} Blood Donation. All rights reserved.
       </div>
     </footer>
