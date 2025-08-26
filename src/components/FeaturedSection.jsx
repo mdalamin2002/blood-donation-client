@@ -1,48 +1,62 @@
-import { FaHeartbeat, FaSearch, FaUserFriends } from "react-icons/fa";
-// import useRole from "../Hook/useRole";
+import React from 'react';
+import { FaHeart, FaMapMarkerAlt, FaShieldAlt, FaBell, FaAward, FaUsers } from 'react-icons/fa';
 
-export default function FeaturedSection()
+const FeaturedSection = () => {
+    return (
+        <section className="py-20 bg-gray-50 px-6 md:px-20">
+            <h2 className="text-3xl font-bold text-center text-gray-800 mb-4">Why Choose BloodConnect?</h2>
+            <p className="text-center text-gray-500 max-w-2xl mx-auto mb-12">
+                Our platform makes blood donation simple, safe, and impactful. Join thousands
+                of donors already making a difference.
+            </p>
 
-{
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
 
- 
-  const features = [
+                {/* Easy Registration */}
+                <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 hover:bg-red-50">
+                    <FaHeart className="text-pink-500 text-3xl mb-4" />
+                    <h3 className="text-xl font-semibold text-gray-800 mb-2">Easy Registration</h3>
+                    <p className="text-gray-500">Quick and simple donor registration process with medical verification.</p>
+                </div>
 
-    {
-      icon: <FaHeartbeat size={30} className="text-red-500" />,
-      title: "Safe Blood Donation",
-      description: "We ensure safe and voluntary blood donation from trusted donors.",
-    },
-    {
-      icon: <FaUserFriends size={30} className="text-blue-500" />,
-      title: "Verified Donor Profiles",
-      description: "All donors are verified and updated regularly for reliability.",
-    },
-    {
-      icon: <FaSearch size={30} className="text-green-600" />,
-      title: "Quick Donor Search",
-      description: "Find donors near your area in seconds using our smart search.",
-    },
-  ];
+                {/* Location-Based Matching */}
+                <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 hover:bg-blue-50">
+                    <FaMapMarkerAlt className="text-blue-500 text-3xl mb-4" />
+                    <h3 className="text-xl font-semibold text-gray-800 mb-2">Location-Based Matching</h3>
+                    <p className="text-gray-500">Find nearby donors and blood banks for urgent requirements.</p>
+                </div>
 
-  return (
-    <section className="py-16 bg-gray-100">
-      <div className="max-w-6xl mx-auto px-4 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">Why Choose Us?</h2>
-        <p className="text-gray-600 mb-12">
-          Our mission is to connect lives through safe and fast blood donation services.
-        </p>
+                {/* Verified Donors */}
+                <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 hover:bg-green-50">
+                    <FaShieldAlt className="text-green-500 text-3xl mb-4" />
+                    <h3 className="text-xl font-semibold text-gray-800 mb-2">Verified Donors</h3>
+                    <p className="text-gray-500">All donors are medically verified for safe blood donation.</p>
+                </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
-          {features.map((feature, index) => (
-            <div key={index} className="bg-white p-6 rounded-xl shadow-md hover:shadow-xl transition">
-              <div className="mb-4 flex justify-center">{feature.icon}</div>
-              <h3 className="text-xl font-semibold mb-2">{feature.title}</h3>
-              <p className="text-gray-600">{feature.description}</p>
+                {/* Real-time Requests */}
+                <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 hover:bg-purple-50">
+                    <FaBell className="text-purple-500 text-3xl mb-4" />
+                    <h3 className="text-xl font-semibold text-gray-800 mb-2">Real-time Requests</h3>
+                    <p className="text-gray-500">Instant notifications for urgent blood donation requests.</p>
+                </div>
+
+                {/* Recognition System */}
+                <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 hover:bg-yellow-50">
+                    <FaAward className="text-yellow-500 text-3xl mb-4" />
+                    <h3 className="text-xl font-semibold text-gray-800 mb-2">Recognition System</h3>
+                    <p className="text-gray-500">Earn badges and recognition for your life-saving contributions.</p>
+                </div>
+
+                {/* Community Support */}
+                <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-all duration-300 hover:bg-pink-50">
+                    <FaUsers className="text-pink-400 text-3xl mb-4" />
+                    <h3 className="text-xl font-semibold text-gray-800 mb-2">Community Support</h3>
+                    <p className="text-gray-500">Join a community of heroes dedicated to saving lives.</p>
+                </div>
+
             </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
+        </section>
+    );
+};
+
+export default FeaturedSection;
