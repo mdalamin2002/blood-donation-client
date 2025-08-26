@@ -39,7 +39,10 @@ export default function DashboardHome() {
 
   return (
     <div className="p-4">
-      <h2 className="text-2xl font-bold mb-4">🏠 Welcome, {user?.displayName}</h2>
+   <h2 className="text-2xl font-bold mb-4">
+  🏠 Welcome, {user?.displayName ?? "Valued Donor"}
+</h2>
+      
 
       {requests.length > 0 && (
         <div>

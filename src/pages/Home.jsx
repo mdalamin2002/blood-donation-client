@@ -8,6 +8,8 @@ import Footer from "../components/Footer";
 import FundCollection from "../components/FundCollection";
 import HomeSection from "../components/HomeSection";
 import HowToDonate from "../components/HowToDonate";
+import TeamSection from "../components/HowItWorks";
+import RecentDonors from "./RecentDonors";
 
 
 
@@ -15,14 +17,16 @@ const Home = () => {
   return (
     <>
       <Banner></Banner>
+      {/* <RecentDonors></RecentDonors> */}
       <FeaturedSection></FeaturedSection>
       <HowToDonate></HowToDonate>
-      <ContactUs></ContactUs>
-      <FundCollection></FundCollection>
      
+      <FundCollection></FundCollection>
+      <ContactUs></ContactUs>
 
     
     <CallToAction></CallToAction>
+    <TeamSection></TeamSection>
     <HomeSection></HomeSection>
     <FAQ></FAQ>
       <Footer></Footer>
