@@ -6,6 +6,7 @@ import FeaturedSection from "../components/FeaturedSection";
 
 import Footer from "../components/Footer";
 import FundCollection from "../components/FundCollection";
+import HomeSection from "../components/HomeSection";
 import HowToDonate from "../components/HowToDonate";
 
 
@@ -22,6 +23,7 @@ const Home = () => {
 
     
     <CallToAction></CallToAction>
+    <HomeSection></HomeSection>
     <FAQ></FAQ>
       <Footer></Footer>
     </>
